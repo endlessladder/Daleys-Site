@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,500,700,900');
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=password] {
+    width: 300px;
+    height: 40px
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    transition: .5s;
+    padding-left: 30px;
+}
+
+fieldset>input[placeholder] {
+    padding-left: 10px;
+}
+
+#canvas {
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    ;
+    left: 5%;
+    top: 5%;
+}
+
+#contactTitle {
+    text-align: right;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 48px;
+    color: #999999;
+    text-transform: uppercase;
+    padding-right: 200px;
+    letter-spacing: 15px;
+    margin-top: 80px;
+}
+
+#formTitle {
+    text-align: right;
+    padding-right: 80px;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 40px;
+    color: #a14242;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin-bottom: 20px;
+}
+
+#container {
+    /* Rectangle 1: */
+    background: #FFFFFF;
+    box-shadow: -5px 10px 16px 6px rgba(0, 0, 0, 0.20);
+    border-radius: 13px;
+    height: 900px;
+    width: 800px;
+    margin: 0 auto;
+    top: 245px;
+    left: 25%;
+}
+
+.who, .contact, #contact, .what, .message, .date {
+    border: none;
+    padding-right: 10px;
+    padding-top: 20px
+}
+
+legend {
+    width: 100%;
+    border-bottom: 2px solid black;
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+textarea, placeholder {
+    width: 315px;
+    height: 200px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#letsChat {
+    font-size: 30pt;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #a14242;
+    padding: 40px 0px 0px 70px;
+}
+
+fieldset {
+    margin: 20px 50px 50px 20px;
+}
+
+fieldset>input {
+    margin-top: 30px;
+}
+
+#col1 {
+    width: calc(50%);
+    float: left;
+}
+
+#contact {
+    font-weight: 200;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#contact input[type='radio'] {
+    margin-left: 50px;
+    margin-top: 20px;
+    align-content: center;
+}
+
+#col2 {
+    width: calc(50%);
+    float: left;
+}
+
+#select {
+    width: 300px;
+    height: 40px;
+    align-content: center;
+}
+
+#select>option {
+    font-weight: 200;
+    font-family: "Roboto";
+}
+
+#submit {
+    clear: both;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20pt;
+    font-weight: 700;
+    color: #a14242;
+}
+
+#formOne {
+    clear: both;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 20pt;
+    font-weight: 400;
+    color: #a14242;
+}
+
+label {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 50px;
+    font-size: 18pt;
+    font-weight: 400;
+    color: #a14242;
+}
+
+input[type=checkbox] {}
+
+label#submit {
+    float: right;
+    margin-right: 80px;
+    margin-top: 50px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #a14242;
+    border-radius: 100px;
+    /* Submit: */
+    border: 1px solid #979797;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 2.49px;
+    text-align: center;
+}
+
+button {
+    float: right;
+    margin-right: 90px;
+    width: 110px;
+    height: 40px;
+    border: 2px solid #a14242;
+    background-color: white;
+    border-radius: 100px;
+    align-content: center;
+    text-align: center;
+}
+
+#container input required, #container textarea required {
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+
+#container input:focus:invalid, #container textarea:focus:invalid {
+    border-color: red;
+    box-shadow: 0 0 5px #c65353;
+}
+
+#container input:focus:valid, #container textarea:focus:valid {
+    border-color: limegreen;
+    box-shadow: 0 0 5px limegreen;
+}
+
+#subscribe {
+    font-family: Roboto;
+    font-weight: 300;
+    color: #a14242;
+}
+
+#col3 {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16pt;
+    margin-left: 20px;
+    align-content: center;
+}
