@@ -1,0 +1,11 @@
+<div id="header">
+  <h1 id="title">DALEY'S CLOTHING</h1>
+  <a id="logo" href="index.html">
+    <canvas id="canvas" width="163" height="164" style="display: block; background-color:rgba(255, 255, 255, 1.00)"></canvas>
+  </a>
+  <ul class="nav">
+    <li><a href="shop_men.html">SHOP</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+  </ul>
+  <h2 class="description">Style Out Of Time</h2>    
+</div>

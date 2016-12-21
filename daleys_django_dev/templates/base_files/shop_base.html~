@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>    
+    <title>{% block title %}Daley's Clothing - Style Out Of Time{% endblock %}</title>
+    <link href={% block style %}"{% static "css/style.css"%}"{% endblock %} type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <script src="{% static "js/jquery-3.1.1.min.js"%}"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="{% static "js/createjs-2015.11.26.min.js"%}"></script>
+    <script src="{% static "js/rain_hover.js"%}"></script>
+    <script src="{% static "js/jackson_java.js"%}"></script>
+    {% block head_addons %}{% endblock %}
+  </head>
+  <body onload="init();">
+    {% includes 'base_files/base_header.html' %}
+    {% block body %}
+    {% endblock %}
+    {% includes 'base_files/base_footer.html' %}
+  </body>
+</html>

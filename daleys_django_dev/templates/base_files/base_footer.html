@@ -1,0 +1,44 @@
+{% load static %}
+<div id="footer">
+  2017 Daley's Clothing.
+  <!-- Trigger/Open The Modal -->
+  <a id="myBtn">Mailing List.</a>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+	<span class="close">×</span>
+	<h2>Stay in touch.</h2>
+      </div>
+      <div class="modal-body">
+	<img id="maillist_logo" src="{% static "images/daleyslogo.png"%}" alt="daleyslogo"/>
+	<form>
+	  Name:<br>
+	  <input type="text" name="name"><br>
+	  Email:<br>
+	  <input type="email" name="email"><br>
+	  <input type="submit" value="Submit">
+	</form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+  <!--<a  id="maillist">Mailing List.</a>-->
+  <div>					Site by
+    <a target="_blank" href="mailto:kerbs.jackson@gmail.com" id="jackson">Jackson Kerbs.</a>
+    <a href="contact_form.html" id="contact_button">
+      <img src="{% static " images/contact_button@0.5x.png"%}" alt="daleyslogo">
+    </a>
+    <div id="social">
+      <a target="_blank" href="https://www.facebook.com/daleysclothing/">
+	<img src="{% static "images/facebook.png"%}" alt="facebook">
+      </a>
+      <a target="_blank" href="https://twitter.com/daleyclothing">
+	<img src="{% static "images/twitter.png"%}" alt="twitter">
+      </a>
+    </div>
+  </div>
+</div>
+<script src="{% static "js/modal.js"%}"></script>

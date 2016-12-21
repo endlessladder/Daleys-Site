@@ -1,0 +1,42 @@
+{% extends 'base_files/shop_base.html' %}
+{% load static %}
+{% block body %}
+<div id="shop_page">
+  <div id="product">
+    <div id="product_photo">
+      <img src="{% static "images/DSC06718-min.JPG"%}" />
+    </div>
+    <div>
+      <div id="sizes">
+	<h6>Sizes Available in Store</h6>
+	<ul>
+	  <li>S</li>
+	  <li>M</li>
+	  <li>L</li>
+	</ul>
+      </div>
+    </div>
+  </div>
+  <h2 id="shop_page_title">
+    SHOP
+  </h2>
+  <div class="shop_nav">
+    <ul>
+      <li><a href="/men/">MEN</a></li>
+      <li><a href="/women/">WOMEN</a></li>
+      <li><a href="/sale/">SALE</a></li>
+    </ul>    
+  </div>
+  <div id="des">
+    <div id="des_title">
+      <em>VINEGAR FAM</em> COAT AND DRESS
+    </div>
+    <div id="des_text">
+      Chartreuse nesciunt hella 90's four dollar toast prism, in swag. Kinfolk pok pok polaroid, roof party green juice occupy chambray labore do selvage literally migas whatever synth. Direct trade lomo wolf, activated charcoal street art kogi fingerstache
+      meditation kale chips ullamco. Hell of retro neutra excepteur velit. Next level salvia ex activated charcoal aliquip, drinking vinegar fam seitan cold-pressed schlitz mumblecore roof party. Gluten-free semiotics dolore fanny pack hammock. Drinking
+      vinegar snackwave ugh +1 salvia. </div>
+  </div>
+  <div id="like_this">
+  </div>
+</div>
+{% endblock %}

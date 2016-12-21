@@ -1,0 +1,25 @@
+{% extends 'base_files/shop_base.html' %}
+{% load static %}
+{% block body %}
+<h2 id="about_title">
+  ABOUT
+</h2>
+<div id="about_page">
+  <div id="des_about">
+    <p>Specializing in providing timeless brands not usually found in SLC.
+      <br>Iconic brands for both Men's and Women's apparel. </p>
+    <br>
+    <div id="address">
+      <p>Daley's Clothing 817 E. 2100 S. SLC, UT 84106
+	<br> 8017351422
+      </p>
+      <div id="email">
+	Email: <a target="_blank" href="mailto:spencer@daleys.co">spencer@daleys.co</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="about_image">
+  <img src="{% static "images/daleyslogo.png"%}" />
+</div>
+{% endblock %}

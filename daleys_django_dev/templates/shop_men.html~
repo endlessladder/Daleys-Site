@@ -1,0 +1,42 @@
+{% extends 'base_files/shop_base.html' %}
+{% load static %}
+{% block body %}
+<div id="shop_page">
+  <div id="product">
+    <div id="product_photo">
+      <img src="{% static "images/DSC06652-min.JPG"%}" />
+    </div>
+    <div id="sizes">
+      <h6>Sizes Available in Store</h6>
+      <ul>
+	<li>S</li>
+	<li>M</li>
+	<li>L</li>
+	<li>XL</li>
+      </ul>
+    </div>
+  </div>
+  <h2 id="shop_page_title">
+    SHOP
+  </h2>
+  <div class="shop_nav">
+    <ul>
+      <li><a href="shop_men.html">MEN</a></li>
+      <li><a href="shop_women.html">WOMEN</a></li>
+      <li><a href="shop_sale.html">SALE</a></li>
+    </ul>
+  </div>
+  <div id="des">
+    <div id="des_title">
+      <em>DALEY'S ORIGINAL</em> T-SHIRT
+    </div>
+    <div id="des_text">
+      Twee roof party kickstarter ex put a bird on it, authentic vinyl ea blue bottle ramps kale chips slow-carb helvetica quinoa locavore. Odio narwhal bitters laborum brunch, aute polaroid letterpress DIY small batch synth. Coloring book schlitz +1 mixtape
+      vegan. Proident jianbing retro blue bottle odio polaroid. Fingerstache unicorn umami, nostrud veniam aesthetic seitan lumbersexual. Austin non veniam williamsburg, normcore kickstarter affogato. Esse af edison bulb drinking vinegar blog, 90's sunt
+      YOLO neutra consequat.
+    </div>
+  </div>
+  <div id="like_this">
+  </div>
+</div>
+{% endblock %}
