@@ -1,0 +1,15 @@
+{% extends 'base_files/shop_base.html' %}
+{% load static %}
+{% block body %}
+<div id="hero">
+  <figure>
+    <img class="mySlides" src="{% static "images/IMG_9711%20copy.jpg"%}" alt="img1">
+    <img class="mySlides" src="{% static "images/IMG_9695.jpg"%}" alt="img2">
+    <img class="mySlides" src="{% static "images/IMG_9853%20copy.jpg"%}" alt="img3">
+    <img class="mySlides" src="{% static "images/IMG_9599%20copy.jpg"%}" alt="im4">  
+  </figure>
+  <div class="btn_floating left" onclick="plusDivs(-1)">&#10094;</div>
+  <div class="btn_floating right" onclick="plusDivs(1)">&#10095;</div>
+</div>
+<script src="{% static "js/slides.js"%}"></script>
+{% endblock %}

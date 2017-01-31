@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="{% static "css/test.css"%}" type="text/css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="{% static "validetta-master/dist/validetta.min.css"%}" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="{% static "validetta-master/dist/validetta.min.js"%}"></script>
+    <script src="{% static "js/createjs-2015.11.26.min.js"%}"></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            console.log('hi jackson');
+
+            $("#date").datepicker();
+
+            $('#formOne').validetta({
+                realTime: true
+            });
+        })
+    </script>
+    <script src="{% static "rain_hover.js"%}"></script>
+    <script src="{% static "js/jackson_java.js"%}"></script>
+</head>
+
+<body onload="init();">
+    <a id="logo" href="/">
+        <canvas id="canvas" width="163" height="164" style="display: block; background-color:rgba(255, 255, 255, 1.00)"></canvas>
+    </a>
+    <div id='container'>
+        <h1 id=letsChat>Lets Chat.
+        </h1>
+        <form id="formOne" action='post' novalidate>
+            <div id="col1">
+                <fieldset class="who">
+                    <legend>Who Are You?</legend>
+                    <input type="text" name='name' placeholder="Name" required data-validetta="required,minLength[5]">
+                    <br />
+                    <input type="text" name='email' placeholder="Email" required data-validetta="email">
+                    <br />
+                </fieldset>
+
+                <fieldset id='contact'>
+                    <legend>Preferred Contact Method</legend>
+                    <input class="radio" type="radio" name="contactRadio" value="phone"> Phone
+                    <input class="radio" type="radio" name="contactRadio" value="Email"> Email
+
+                </fieldset>
+            </div>
+
+            <div id="col2">
+                <fieldset class="what">
+                    <legend>What Should We Talk About?</legend>
+                    <select id='select' required>
+              <option value="">Choose a Subject</option>
+              <option value="general">General Inquiries</option>
+              <option value="projects">I need help with a project</option>
+              <option value="interview">I need an interview</option>
+              <option value="jokes">I need a joke</option>
+              <option value="design">I need a Design</option>
+            </select>
+                </fieldset>
+
+                <fieldset class="message">
+                    <legend>Your Message</legend>
+                    <textarea placeholder="Type Your Message" required></textarea>
+
+
+                </fieldset>
+
+                <fieldset class="date">
+                    <legend>Date</legend>
+                    <input id="date" type="text" name='date' placeholder="Select Date" required>
+                </fieldset>
+            </div>
+            <br/>
+            <div id='col3'>
+                <label>Subscribe to Our Newsletter</label>
+                <input id="checkbox" type="checkbox" name="subscribe" value="true">
+                <br/>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

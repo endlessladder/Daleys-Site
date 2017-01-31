@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Daley's Clothing{% endblock %}</title>
+    <script src="{% static "js/aframe.js"%}"></script>
+    {% block head_addons %}{% endblock %}
+  </head>
+  <body>
+    <a-scene>
+    {% block a-scene %}
+    {% endblock %}
+    </a-scene>
+  </body>
+</html>
